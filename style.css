@@ -1,0 +1,49 @@
+﻿/* Body Elements */
+body {
+	background-color : black;
+	text-align : center;
+	font-family : Verdanna, Arial, "Times New Roman", Serif, Sans-Serif;
+	color : black;	
+}
+/* Title of Blog */
+h1 {
+	padding : 10 px;
+	text-align : center;
+}
+
+/* unvisited link */
+a:link {color: red;}
+/* visited link */
+a:visited {color: darkblue;}
+/* mouse over link */
+a:hover {color: rgb (0,255,255);}
+/* selected link */
+a:active {color: lime;}
+
+article {
+	margin-left : 10%;
+	margin-right : 10%;
+}
+/* MENU */
+#menu {
+	margin-top : 100px;
+	padding : 10 px;
+}
+/* Main Part */
+#main {
+	border : 1px ;
+	border-radius : 25px ;
+	border-style: solid;
+	max-width: 1250px;
+	margin : auto;
+	background-color : white;
+}
+/* CLASSES */
+.roundBorders {
+	border : 1px ;
+	border-radius : 25px ;
+	border-style: solid;
+	max-width: 1250px;
+	margin : auto;
+	background-color : white;
+}
