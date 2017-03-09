@@ -4,12 +4,14 @@ body {
 	text-align : center;
 	font-family : Verdanna, Arial, "Times New Roman", Serif, Sans-Serif;
 	color : black;	
+	margin-left : 10%;
+	margin-right : 10%;
+	background-image : url("Images/ornate1.png");
+	
+	font-family : "cursive", "French Script", "gothic", "Blackadder ITC", "Serif";
+	font-size : 1.5em;
 }
-/* Title of Blog */
-h1 {
-	padding : 10 px;
-	text-align : center;
-}
+/* LINK WIDGET */
 
 /* unvisited link */
 a:link {color: red;}
@@ -20,30 +22,60 @@ a:hover {color: rgb (0,255,255);}
 /* selected link */
 a:active {color: lime;}
 
+/* Title of Blog */
+h1 {
+	padding : 10 px;
+	text-align : center;
+	padding: 1%;
+}
+nav {
+	padding: 1%;
+	background-color : white;
+	background-image : url("Images/woodsign.jpg");
+}
+
 article {
 	margin-left : 10%;
 	margin-right : 10%;
+	padding-top : 5%;
+	
+	
 }
 /* MENU */
+#title {
+	margin : auto;
+	font-size: 3em;
+	border-bottom : solid;
+	background-color : rgb(100,100,155);
+	border-bottom-color : rgb(50,50,75);
+	border-bottom-style : solid;
+	border-radius : 20px;
+	background-image : url("Images/blankjournal.png");
+	
+}
+#topMenu {
+	background-image : url("Images/blankjournal.png");
+}
 #menu {
-	margin-top : 100px;
-	padding : 10 px;
+	padding : 10px;
 }
 /* Main Part */
 #main {
-	border : 1px ;
-	border-radius : 25px ;
-	border-style: solid;
-	max-width: 1250px;
-	margin : auto;
-	background-color : white;
+	background-image : url("Images/textile.png");
+	color: black;
 }
 /* CLASSES */
 .roundBorders {
-	border : 1px ;
 	border-radius : 25px ;
-	border-style: solid;
-	max-width: 1250px;
-	margin : auto;
+	border-bottom-style : solid;
+	background-color : rgb(100,100,155);
+	border-bottom-color : rgb(50,50,75);
+	border-bottom-style : solid;
+	border-width : 20 px;
+}
+.button {
 	background-color : white;
+	padding : 10px;
+	border-bottom-color : rgb(50,50,75);
+	border-bottom-style : soli
 }
