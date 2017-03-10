@@ -59,6 +59,19 @@ article {
 #menu {
 	padding : 10px;
 }
+#rightarrow {
+	position: fixed;
+	left : 1%;
+	top : 50%;
+	display: block;
+}
+#leftarrow {
+	position: fixed;
+	left : 18%;
+	top : 50%;
+	z-index : 3;
+	display: none;
+}
 /* Main Part */
 #main {
 	background-image : url("Images/textile.png");
@@ -78,4 +91,43 @@ article {
 	padding : 10px;
 	border-bottom-color : rgb(50,50,75);
 	border-bottom-style : soli
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgb(150,150,150);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
