@@ -6,9 +6,60 @@ var radius = canvas.height / 2;
 ctx.translate(radius, radius);
 radius = radius * 0.90
 drawClock();
+updateTime();
 //Timing it;
 setInterval(drawClock, 1000);
-
+setInterval(updateTime, 1000);
+function updateTime() {
+	var now = new Date();
+	var monthNumber = now.getMonth();
+	document.getElementById("year").innerHTML = now.getFullYear() + " ";
+	document.getElementById("month").innerHTML = " " + monthNames(monthNumber);
+	document.getElementById("day").innerHTML = "/" + now.getDate() + " ";
+	document.getElementById("hour").innerHTML = now.getHours() + ":";
+	document.getElementById("minute").innerHTML = now.getMinutes() + ":";
+	document.getElementById("second").innerHTML = now.getSeconds();
+}
+function monthNames(month) {
+	switch (month) {
+    case 0:
+        month = "Janurary";
+        break;
+    case 1:
+        month = "Feburary";
+        break;
+    case 2:
+        month = "March";
+        break;
+    case 3:
+        month = "April";
+        break;
+    case 4:
+        month = "May";
+        break;
+    case 5:
+        month = "June";
+        break;
+    case 6:
+        month = "July";
+		break;
+    case 7:
+        month = "August";
+		break;
+    case 8:
+        month = "September";
+		break;
+    case 9:
+        month = "October";
+		break;
+    case 10:
+        month = "November";
+		break;
+    case 11:
+        month = "December";
+	}
+	return month
+}	
 //How to draw a clock 101
 function drawClock() {
 	drawFace(ctx, radius);
