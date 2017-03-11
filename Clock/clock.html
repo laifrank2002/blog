@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="description" content="Blog">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Frank Lai">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog</title>
+		<link rel="stylesheet" type="text/css" href="../style.css"/>
+	</head>
+	<body>
+		<div id="menu">
+			<!-- TITLE TOP AND OTHER -->
+			<div id="title">
+				<h1>A Blog</h1>
+			</div>
+			<div id="topMenu" class = "roundBorders">
+				<h1>Articles and Whatever</h1>
+				<h2 id = "homeTop">Home</h2>
+			</div>
+			<!-- NAV ELEMENT! -->
+			<nav id="mySidenav" class = "sidenav">
+				<p>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;>
+					<a href="../index.html" class="button">Home</a> 
+					<a href="../about.html" class="button">About</a> 
+					<a href="../references.html" class="button">References</a> 
+					<a href="../contact.html" class="button">Contact</a> 
+					<a href="../archives.html" class="button">Archives</a> 
+					<a href="../pastprojects.html" class="button">Past Projects</a>
+					<a href="clock.html" class="button">Clock</a>
+				</p>
+			</nav>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src = "../Images/arrowright.png" alt = "open nav" height = "64px" width = "64px" id="rightarrow"></span>
+		<span style="font-size:30px;cursor:pointer" onclick="closeNav()"><img src = "../Images/arrowleft.png" alt = "close nav" height = "64px" width = "64px" id="leftarrow"></span>
+		<!-- Javascript SIDENAV Widget-->
+		<script src="../sidenav.js"></script>
+		<!-- Content! -->
+		<div id = "main" class = "roundBorders">
+			<canvas id="myClock" width="500" height="500"> Unable to Display Clock</canvas>
+			<script src="script.js"></script>
+		</div>
+		<footer>
+			<h3>References</h3>
+			<p>
+				All information is from &copy; etc. Industrial Productions Company. Contact franklai2002@gmail.com for any questions or mail them in at M2T 4AF, Toronto, Ontario, Canada
+			</p>
+		</footer>
+	</body>
+</html>

@@ -76,6 +76,7 @@ article {
 #main {
 	background-image : url("Images/textile.png");
 	color: black;
+	padding : 10px;
 }
 /* CLASSES */
 .roundBorders {
